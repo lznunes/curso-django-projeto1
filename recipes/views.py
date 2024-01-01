@@ -3,7 +3,14 @@ from django.shortcuts import render
 
 
 def home(request):
-    return  HttpResponse("Home!")
+    return  HttpResponse('''<!DOCTYPE>
+    <html>
+        <head><h1>Olá Mundo!</h1></head>
+            <body>
+                <h1>OLÁ MUNDO!</h1>
+            </body>      
+    </html>
+''')
 
 def contato(request):
     return  HttpResponse("Contato!")
