@@ -11,11 +11,3 @@ def home(request):
         'name': 'Luiz Nunes',
         } )
 
-
-
-def contato(request):
-    #return  HttpResponse("Contato!")
-    return render(request, 'contatos.html')
-
-def sobre(request):
-    return  HttpResponse("Sobre!")
