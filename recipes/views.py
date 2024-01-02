@@ -3,17 +3,19 @@ from django.shortcuts import render
 
 
 def home(request):
-    return  HttpResponse('''<!DOCTYPE>
-    <html>
-        <head><h1>Olá Mundo!</h1></head>
-            <body>
-                <h1>OLÁ MUNDO!</h1>
-            </body>      
-    </html>
-''')
+    #return  render(request, 'recipes/home.html')
+    #return  render(request, 'global/home.html')
+    #return  render(request, 'recipes/home.html', status=404)
+
+    return  render(request, 'recipes/home.html', status=404,context={
+        'name': 'Luiz Nunes',
+        } )
+
+
 
 def contato(request):
-    return  HttpResponse("Contato!")
+    #return  HttpResponse("Contato!")
+    return render(request, 'contatos.html')
 
 def sobre(request):
     return  HttpResponse("Sobre!")
