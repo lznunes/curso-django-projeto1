@@ -13,7 +13,7 @@ def home(request):
 
 
 def recipe(request, id):
-     return  render(request, 'recipes/pages/home.html',context={
+     return  render(request, 'recipes/pages/recipes-views.html',context={
         'name': 'Luiz Nunes',
         } )
 
